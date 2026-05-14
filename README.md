@@ -46,4 +46,4 @@ qraffle already exists on-chain. This proposal is an upgrade proposal, not an in
 ## Technical Implementation
 
 **Developer:** [double-k-3033](https://github.com/double-k-3033)
-Core implementation PR: [https://github.com/qubic/core/pull/853/changes](https://github.com/qubic/core/pull/853/changes)
+-Core implementation PR: [https://github.com/qubic/core/pull/853/changes](https://github.com/qubic/core/pull/853/changes)
