@@ -19,7 +19,7 @@ qraffle already exists on-chain. This proposal is an upgrade proposal, not an in
 - Token raffle deposits now restricted to registered DAO members only (prevents DoS)
 - QRAFFLE and QXMR tokens blocked from being used as raffle prizes (reserved for internal use)
 - Raffle winner randomness hardened — seed now uses `XOR(prevSpectrumDigest, prevComputerDigest)` hashed via K12, making it impossible for computors to grind/manipulate the outcome
-
+- New cap of 3 proposals per wallet per epoch to prevent spamming
 ### Fee Accounting
 
 - Token raffle deposit fees now correctly credited to epoch revenue
@@ -37,6 +37,8 @@ qraffle already exists on-chain. This proposal is an upgrade proposal, not an in
 
 - Duplicate checks for QuRaffle and token raffle deposits upgraded from O(N) to O(1) using HashSets and BitArrays
 - Vote lookup upgraded from O(N) to O(1)
+- Per token-raffle member cap of 512
+- Max Count of token-raffle reduced from 1,048,576 to 16,384
 - State size reduction: **616 MB → 16 MB**
 
 ### Tests
